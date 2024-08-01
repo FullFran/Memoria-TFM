@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.28)  1 AUG 2024 20:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.28)  1 AUG 2024 20:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -625,7 +625,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (build/main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (build/partes/agradecimientos.aux) (build/partes/resumen.aux) (build/capitulos/introduccion.aux) (build/capitulos/objetivos.aux) (build/capitulos/metodologia.aux) (build/capitulos/resultados.aux) (build/partes/conclusiones.aux))
+ (build/partes/agradecimientos.aux) (build/partes/resumen.aux) (build/capitulos/introduccion.aux) (build/capitulos/objetivos.aux) (build/capitulos/metodologia.aux) (build/capitulos/resultados.aux) (build/capitulos/conclusiones.aux) (build/partes/bibliografia.aux) (build/partes/conclusiones.aux) (build/partes/anexos.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -708,7 +708,7 @@ Package hyperref Info: Link coloring ON on input line 20.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<IMG/logoidep.jpg, id=19, 789.95125pt x 473.77pt>
+<IMG/logoidep.jpg, id=39, 789.95125pt x 473.77pt>
 File: IMG/logoidep.jpg Graphic file (type jpg)
 <use IMG/logoidep.jpg>
 Package pdftex.def Info: IMG/logoidep.jpg  used on input line 22.
@@ -721,7 +721,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<IMG/logomaster.jpg, id=20, 243.91125pt x 133.49875pt>
+<IMG/logomaster.jpg, id=40, 243.91125pt x 133.49875pt>
 File: IMG/logomaster.jpg Graphic file (type jpg)
 <use IMG/logomaster.jpg>
 Package pdftex.def Info: IMG/logomaster.jpg  used on input line 22.
@@ -831,44 +831,117 @@ LaTeX Info: Redefining \% on input line 1.
 \openout2 = `partes/resumen.aux'.
 
  (./partes/resumen.tex)
+
+[7
+
+
+]
 \openout2 = `capitulos/introduccion.aux'.
 
- (./capitulos/introduccion.tex)
+ (./capitulos/introduccion.tex
+Cap\'{\i }tulo 1.
+)
+
+[8
+
+
+
+
+]
 \openout2 = `capitulos/objetivos.aux'.
 
- (./capitulos/objetivos.tex)
+ (./capitulos/objetivos.tex
+Cap\'{\i }tulo 2.
+)
+
+[9
+
+
+
+
+]
 \openout2 = `capitulos/metodologia.aux'.
 
- (./capitulos/metodologia.tex)
+ (./capitulos/metodologia.tex
+Cap\'{\i }tulo 3.
+)
+
+[10
+
+
+
+
+]
 \openout2 = `capitulos/resultados.aux'.
 
- (./capitulos/resultados.tex)
+ (./capitulos/resultados.tex
+Cap\'{\i }tulo 4.
+)
+
+[11
+
+
+
+
+]
+\openout2 = `capitulos/conclusiones.aux'.
+
+
+No file capitulos/conclusiones.tex.
+\openout2 = `partes/bibliografia.aux'.
+
+(./partes/bibliografia.tex)
 \openout2 = `partes/conclusiones.aux'.
 
- (./partes/conclusiones.tex) (build/main.aux
+ (./partes/conclusiones.tex
+Cap\'{\i }tulo 5.
+)
+
+[12
+
+
+
+
+
+
+
+
+
+
+]
+\openout2 = `partes/anexos.aux'.
+
+ (./partes/anexos.tex)
+
+[13
+
+
+
+
+] (build/main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (build/partes/agradecimientos.aux) (build/partes/resumen.aux) (build/capitulos/introduccion.aux) (build/capitulos/objetivos.aux) (build/capitulos/metodologia.aux) (build/capitulos/resultados.aux) (build/partes/conclusiones.aux))
+ (build/partes/agradecimientos.aux) (build/partes/resumen.aux) (build/capitulos/introduccion.aux) (build/capitulos/objetivos.aux) (build/capitulos/metodologia.aux) (build/capitulos/resultados.aux) (build/capitulos/conclusiones.aux) (build/partes/bibliografia.aux) (build/partes/conclusiones.aux) (build/partes/anexos.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8E1D3DF6AA9334381E95E4977FD241EB;391.
+(rerunfilecheck)             Checksum: C1A53765BCADDA7023253AAA96018998;882.
  ) 
 Here is how much of TeX's memory you used:
- 25534 strings out of 473584
- 460397 string characters out of 5728334
+ 25628 strings out of 473584
+ 462995 string characters out of 5728334
  1932905 words of memory out of 5000000
- 47913 multiletter control sequences out of 15000+600000
- 574939 words of font info for 76 fonts, out of 8000000 for 9000
+ 47974 multiletter control sequences out of 15000+600000
+ 575710 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,101p,500b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on build/main.pdf (7 pages, 233635 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on build/main.pdf (14 pages, 262596 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
