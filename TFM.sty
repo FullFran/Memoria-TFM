@@ -1,0 +1,310 @@
+
+
+\usepackage{mathtools,amssymb,amsfonts} 
+\usepackage{verbatim}
+\usepackage[english]{babel} %Indica que escribiermos en español
+\usepackage[usenames]{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage{booktabs} % Para tablas
+\usepackage[table,xcdraw]{xcolor} % Para colorear celdas de tablas 
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+    \sidecaptionvpos{figure}{c} % Para que el texto se alinee al centro vertical
+% Para poner el texto de las imágenes abajo
+\usepackage{pdfpages}   % Para poder quitar numeración de figuras
+\usepackage{graphicx, amsmath, amsthm, latexsym, epsfig, enumerate, listings}
+\usepackage{flushend} % Para que las columnas de la última página se ajusten
+\usepackage{appendix} % Para poner apéndices
+\usepackage{parskip} % Para que los párrafos no tengan sangría
+\usepackage{float} % Para que las figuras se queden en su sitio
+\usepackage[hidelinks]{hyperref}        %para meter lins con \href
+\usepackage{csquotes} % Para citas
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+
+% \usepackage{emoji} % Para poner emojis, me da error
+
+\usepackage{multicol}       %paquete para crear multicolumna
+\usepackage{wrapfig}      %paquete para poner figuras al lado del texto
+\usepackage{physics}        % Paquete para derivadas 
+\usepackage{scrextend}
+\usepackage{pythonhighlight}
+\usepackage[a4paper]{geometry}
+\usepackage{tikz,svg,titlesec}
+\usepackage[labelfont=bf,labelsep=period,hypcap=true]{caption}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    language=Python,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+\hypersetup{
+    colorlinks=true,
+    citecolor=webgreen,
+    filecolor=black,
+    linkcolor=webblue,
+    urlcolor=webtinto,
+    pdftitle={},
+    pdfsubject={},
+    pdfkeywords={},
+    pdfproducer={Latex with hyperref},
+    pdfcreator={Visual Studio Code},
+    bookmarksopen=false,
+    pdfdisplaydoctitle=true,
+    pdfstartview={FitH}
+}
+
+\definecolor{migris}{HTML}{636363}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{table}{\colorbox{migris!75}{\parbox{0.887\textwidth}{\textbf{#1#2}#3}}}
+\captionsetup[table]{format=table,labelfont=white,textfont=white}
+\definecolor{azul}{rgb}{65,105,225}
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webgray}{rgb}{.753,.753,.753}
+\definecolor{webblue}{rgb}{0,0,.8}
+\definecolor{webtinto}{rgb}{0.73,0.00,0.00}
+\definecolor{gray96}{gray}{.96}
+\usepackage{tocbibind}
+\graphicspath{{./IMG/}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           DEFINIR ATAJOS Y TÍTULOS DE FIGURAS, ENCABEZADOS...
+
+\usepackage[user,abspage]{zref}         % Para páginas roman en el índice
+\makeatletter
+\newcommand{\startfront}{\clearpage\pagenumbering{Roman}\zlabel{startfront}}
+\newcommand{\startmain}{\clearpage\pagenumbering{arabic}\zlabel{startmain}}
+\newcommand\startback{%
+  \clearpage
+  \pagenumbering{Roman}%
+  \setcounter{page}{%
+    \numexpr
+      \zref@extractdefault{startmain}{abspage}{0}-
+      \zref@extractdefault{startfront}{abspage}{0}+1
+    \relax
+  }%
+}
+\makeatother
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{
+\fancyfoot[C]{\small{pág. \thepage}}
+}
+\fancypagestyle{plain}{
+    \fancyfoot[C]{\thepage}
+    \setlength{\headheight}{14pt}    
+}
+
+
+\pagestyle{plain}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert} %comandos para poder poner en valor absoluto funciones o valores.
+\setlength\columnsep{18pt} %Especifíca separación de las columnas
+\marginsize{2cm}{2cm}{1.25cm}{2cm} % Izquierda, derecha, arriba, abajo
+\renewcommand{\lstlistingname}{Script}
+%\renewcommand{\tablename}{Tabla}
+\def\tablename{Tabla}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                              PARA LA PORTADA, RELLENAR CON LOS DATOS CORRESPONDIENTES
+
+\newcommand{\fecha}{Córdoba, 07/2024}
+\newcommand{\autor}{Antonio Rivas Blanco}
+\newcommand{\tutores}{Jorge Hidalgo Aguilera and Serena di Santo}
+\newcommand{\titulo}{Exploring the relationship between Hawkes processes and self-organized criticality in living systems}
+\newcommand{\linea}{Modelling of complex systems and their interdisciplinary applications}
+
+%\begin{comment}
+
+\renewcommand{\maketitle}{
+\clearpage\thispagestyle{empty}\addtocounter{page}{-1} 
+    \begin{titlepage}		
+        \begin{center}
+            \begin{minipage}{.12\textwidth}
+                \includegraphics[width=\textwidth]{IMG/logoidep.jpg}
+            \end{minipage}%
+            \begin{minipage}{.7\textwidth}
+                \centering
+            \begin{LARGE}
+                UNIVERSITY OF CORDOBA\\
+                INSTITUTE OF POSTGRADUATE STUDIES
+            \end{LARGE}
+            \end{minipage}%
+            \begin{minipage}{.12\textwidth}
+               \includegraphics[width=\textwidth]{IMG/logomaster.jpg}
+            \end{minipage}
+        \end{center}
+        \vspace{1.5cm}
+    
+        \begin{center}
+            \textbf{\LARGE{UNIVERSITY MASTER'S DEGREE}}
+        \end{center}
+    
+        \vspace{1.5cm}
+    
+        \begin{center}
+            \textbf{\huge PHYSICAL TECHNOLOGY:\\ RESEARCH AND APPLICATIONS}
+        \end{center}
+    
+        \vspace{1.5cm}
+
+        \begin{center}
+            \textbf{\LARGE{MASTER'S THESIS}}
+        \end{center}
+
+        \vspace{1.5cm}    
+        
+        \begin{center}
+            \textbf{\LARGE \titulo}
+        \end{center}
+    
+        \vspace{1.5cm}
+        
+        \begin{center}
+            \LARGE \autor
+        \end{center}
+        \vspace{1.5cm}
+    \Large
+    Tutor(s): \tutores\\
+    
+    \vspace{0.5cm}
+    
+    Line of research: \linea
+    \vfill
+    \begin{center}
+        \LARGE \fecha
+    \end{center}
+
+    \end{titlepage}
+
+\clearpage
+
+}
+%\end{comment}
+
+% Estilo de capítulo, secciones...
+
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titleformat{\chapter}[display]
+  { \sffamily\bfseries\Large\color{blue}}
+  {\filleft\MakeUppercase{\chaptertitlename}\ \Huge\sffamily{\arabic{chapter}}\ 
+  }  
+  {4ex}
+  {\titlerule
+   \vspace{2ex}%
+   \filright}
+  [\vspace{2ex}\hrule\vspace{2pt}%
+   \titlerule]
+   
+   \titleformat{\section}[hang]
+{\large \scshape\bfseries}
+{\color{blue}  \thesection .}
+{1ex}{\color{blue}}[\quad]
+{}
+
+  \titleformat{\subsection}[runin]
+{ \scshape\bfseries}
+{\color{blue}  \thesubsection .}
+{1ex}{\color{blue}}[\quad]
+{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                 PARA El Anexo II, RELLENAR CON LOS DATOS CORRESPONDIENTES, 
+\newcommand{\tutoruno}{Jorge Hidalgo Aguilera}
+\newcommand{\tutordos}{Serena di Santo}
+\newcommand{\convocatoria}{1ª}
+\newcommand{\fechadefensa}{23/07/2024}
+\newcommand{\fechafirmaanexoII}{X de julio de 2024}
+
+\newcommand{\anexoII}{
+%\clearpage\thispagestyle{empty}\addtocounter{page}{-1} % Esto junto al otro \clearpage sirve para que no te cuente la página
+        \Large \textbf{\underline{Autorización de defensa del Trabajo Fin de Máster}}\\
+
+        \vspace{0.75cm}
+        \normalsize
+        Tutor 1: \tutoruno\\
+        Tutor 2: \tutordos\\
+
+        INFORMAN: Que el presente trabajo titulado \emph{\titulo} que constituye la memoria del Trabajo Fin de Máster ha sido realizado por  
+        \autor\phantom{ }y AUTORIZA/N su presentación para que pueda ser defendido en la convocatoria \convocatoria\phantom{ }con fecha \fechadefensa.\\
+        
+        \vspace{1.5cm}
+
+        Firmado en Córdoba a \fechafirmaanexoII
+    
+        \vspace{3cm}
+        
+        Tutor 1: \tutoruno \hfill        Tutor 2: \tutordos
+\clearpage
+    
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                          PARA El Anexo III, RELLENAR CON LOS DATOS CORRESPONDIENTES
+%                                                          
+%
+%                                                          DESPUÉS DE PONER EL \begin{document}, poner:
+%                                                          \maketitle 
+%                                                          \anexoII 
+%                                                          \newpage
+%                                                          \anexoIII
+
+
+\newcommand{\fechafirmaanexoIII}{X de julio de 2024}
+\newcommand{\DNI}{49832223D}
+
+\newcommand{\anexoIII}{
+    %\clearpage\thispagestyle{empty}\addtocounter{page}{-1} % Esto junto al otro \clearpage sirve para que no te cuente la página
+        \Large \textbf{\underline{Declaración de autoría}}\\
+
+        \vspace{0.75cm}
+        \normalsize
+        Nombre y apellidos: \autor\\
+        DNI: \DNI
+
+        \vspace{1.5cm}
+        
+        DECLARA
+        
+        \vspace{1.5cm}
+        \begin{enumerate}
+            \item Que el trabajo que presenta es totalmente original y que se hace responsable de todo su contenido.
+            \item Que no ha sido publicado no total ni parcialmente.
+            \item Que todos los aportes de otros autores/as han sido debidamente referenciados.
+            \item Que no ha incurrido en fraude científico, plagio o vicios de autoría.
+            \item Que, en caso de no cumplir los requerimientos anteriores, aceptará las medidas disciplinarias sancionadoras que correspondan.
+        \end{enumerate}
+
+        \vspace{1.5cm}
+        
+        Firmado en Córdoba a, \fechafirmaanexoIII
+\clearpage
+}

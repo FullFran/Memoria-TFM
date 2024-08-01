@@ -1,0 +1,19 @@
+{
+  "name": "LaTeX Dev Container",
+  "image": "latex-tfm",
+  "extensions": [
+    "ms-vscode-remote.remote-containers",
+    "james-yu.latex-workshop"
+  ],
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.outDir": "./out"
+  },
+  "runArgs": [
+    "--init"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ]
+}
